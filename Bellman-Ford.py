@@ -123,7 +123,7 @@ path_edges = list(zip(flight_path[:-1], flight_path[1:])) if flight_path else []
 nx.draw_networkx_edges(G, pos, edgelist=path_edges, edge_color="red", width=2)
 nx.draw_networkx_labels(G, pos, font_size=8, font_color="black")
 
-plt.title("Flight Path from JFK to SIN")
+plt.title("Flight Path from JFK to SIN using Bellman Ford")
 plt.xlabel("Longitude")
 plt.ylabel("Latitude")
 plt.show()
